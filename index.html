@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha de Treino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dust"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">FICHA</span>
+    <span class="brand-sub">de treino</span>
+  </div>
+  <div class="streak" id="streak" title="Sessões concluídas"></div>
+</header>
+
+<nav class="tabs" id="tabs" role="tablist" aria-label="Selecionar treino"></nav>
+
+<main id="workout-view"></main>
+
+<section class="history" id="history-section">
+  <div class="history-head">
+    <h2>Quadro de registro</h2>
+    <button class="ghost-btn" id="clear-history">apagar histórico</button>
+  </div>
+  <ul class="history-list" id="history-list"></ul>
+</section>
+
+<footer class="foot">
+  <p>Seus dados ficam salvos só neste navegador (localStorage). Nada é enviado pra nenhum servidor.</p>
+</footer>
+
+<script src="workouts.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
